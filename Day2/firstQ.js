@@ -19,4 +19,6 @@ console.log(stringD.substr(3,18))
 
 console.log(stringD.includes('Script'))
 
+console.log(stringD.split())
 
+console.log(stringD.split(' '))
