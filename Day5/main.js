@@ -64,4 +64,32 @@ for (i = 0; i < itCompanies.length; i++) {
 }
 
 //11
+ let companies=itCompanies.toString();
+companies=companies.toUpperCase();
+console.log(companies.split(','))
 
+//12
+let sentence='Facebook, Google, Microsoft, Apple, IBM,Oracle and Amazon are big IT companies'
+sentence=sentence.split()
+console.log(sentence)
+
+//13
+company=companies.includes();
+if (company==false) {
+    console.log('not found')
+}
+
+//14
+
+//15
+console.log(itCompanies.sort());
+
+//16
+console.log(itCompanies.reverse());
+
+//17
+itCompanies=['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle','Amazon']
+console.log(itCompanies.slice(0,3));
+
+//18
+console.log(itCompanies.splice(itCompanies.length-3,itCompanies.length))
