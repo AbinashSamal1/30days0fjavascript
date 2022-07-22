@@ -74,7 +74,7 @@ sentence=sentence.split()
 console.log(sentence)
 
 //13
-company=companies.includes();
+company=companies.includes('Jio');
 if (company==false) {
     console.log('not found')
 }
@@ -93,3 +93,5 @@ console.log(itCompanies.slice(0,3));
 
 //18
 console.log(itCompanies.splice(itCompanies.length-3,itCompanies.length))
+
+//19
