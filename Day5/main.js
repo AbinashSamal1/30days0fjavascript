@@ -95,3 +95,23 @@ console.log(itCompanies.slice(0,3));
 console.log(itCompanies.splice(itCompanies.length-3,itCompanies.length))
 
 //19
+middleCompany = Math.floor(itCompanies.length / 2);
+middleIndex = itCompanies[middleCompany];
+console.log(middleIndex.slice())
+
+//20
+itCompanies=['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle','Amazon']
+itCompanies.shift()
+console.log(itCompanies)
+
+//23
+itCompanies=['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle','Amazon'];
+console.log(itCompanies.splice())
+
+//22
+itCompanies.pop();
+console.log(itCompanies);
+
+//21
+itCompanies=['Facebook', 'Google', 'Microsoft', 'Apple', 'IBM', 'Oracle','Amazon']
+splice=Math.floor(itCompanies.length/2);
