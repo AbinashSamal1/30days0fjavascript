@@ -109,7 +109,7 @@ function findSum(no) {
 
 console.log(findSum(100));
 
-//12
+//13
 const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
 
 function generateString(length) {
@@ -124,3 +124,13 @@ function generateString(length) {
 
 console.log(generateString(5));
 
+//15
+console.log(generateString(6))
+
+//14
+arr = [];
+while(arr.length < 5){
+    var r = Math.floor(Math.random() * 100) + 1;
+    if(arr.indexOf(r) === -1) arr.push(r);
+}
+console.log(arr);
