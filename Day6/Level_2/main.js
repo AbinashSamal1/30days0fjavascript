@@ -81,23 +81,43 @@ console.log(res);
 
 //11
 const webTechs = [
-    'HTML',
-    'CSS',
-    'JavaScript',
-    'React',
-    'Redux',
-    'Node',
-    'MongoDB'
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "React",
+  "Redux",
+  "Node",
+  "MongoDB",
+];
+longest = webTechs.reduce(function (a, b) {
+  return a.length > b.length ? a : b;
+}, "");
+console.log(longest);
+
+//12
+
+//13
+mernStack = "mernStack";
+mern = mernStack.substring(0, 4);
+accr=mern.toLocaleUpperCase();
+console.log(accr);
+
+
+
+//14
+  iterate = webTechs.length;
+  for (var i = 0; i < iterate; i++) {
+      console.log(webTechs[i]);
+  }
+//15
+fruits = ["Banana", "Orange", "Mango", "Lemon"];
+for (i = fruits.length - 1; i >= 0; i--) {
+    console.log(fruits[i]);
+}
+
+//16
+const fullStack = [
+    ['HTML', 'CSS', 'JS', 'React'],
+    ['Node', 'Express', 'MongoDB']
   ]
-  longest = webTechs.reduce(function (a, b) {
-    return a.length > b.length ? a : b;
-  }, "");
-  console.log(longest);
-  
-  //12
-
-
-  //13
-
-  //14
-  
+  console.log(fullStack.join())

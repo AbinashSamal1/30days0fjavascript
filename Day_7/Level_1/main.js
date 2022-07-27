@@ -97,20 +97,73 @@ function speed() {
 console.log(speed());
 
 //11
-function weight(){
-    let mass=98
-    const gravity=9.8
-    let weight= mass/gravity
-    return weight;
+function weight() {
+  let mass = 98;
+  const gravity = 9.8;
+  let weight = mass / gravity;
+  return weight;
 }
 console.log(weight());
 
 //12
-function convertCelciusToFahrenheit(){
-    let oC=37
-    let oF=(oC*9/5)+32;
-    return oF;
+function convertCelciusToFahrenheit() {
+  let oC = 37;
+  let oF = (oC * 9) / 5 + 32;
+  return oF;
 }
-console.log(convertCelciusToFahrenheit())
+console.log(convertCelciusToFahrenheit());
 
 //13
+
+let h = prompt("Enter Height");
+let w = prompt("Enter Weight");
+
+let bmi = (w / (h * h)) * 100 * 100;
+console.log(bmi);
+
+if (bmi < 18.5) {
+  console.log("Underweight");
+} else if (bmi >= 18.5 && bmi <= 24.9) {
+  console.log("Normal Weight");
+} else if (bmi > 24.9 && bmi <= 29.9) {
+  console.log("Overweight");
+} else {
+  console.log("Obese");
+}
+
+//14
+  let month=prompt('enter Month')
+
+  if(month>=1 && month<=3){
+    console.log('Spring')
+  }
+  else if(month>3 && month <=5){
+    console.log('Summer')
+  }
+  else if(month>5 && month <=8){
+    console.log('Autumn')
+  }
+  else if(month>8 && month <=12){
+    console.log('Winter')
+  }
+
+  //15
+  function max_of_three(x, y, z) 
+ {
+  max_val = 0;
+  if (x > y)
+  {
+    max_val = x;
+  } else
+  {
+    max_val = y;
+  }
+  if (z > max_val) 
+  {
+    max_val = z;
+  }
+  return max_val;
+}
+
+console.log(max_of_three(0,10,5));
+console.log(max_of_three(0,-10,-2));
