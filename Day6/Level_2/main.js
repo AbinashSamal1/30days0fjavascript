@@ -55,12 +55,15 @@ console.log(countries);
 countries.map((c) => c.length);
 
 //7
-let coun = countries.find((a) => a.includes("land"));
-console.log(coun);
-
+const countriesContainingLand = countries.filter((country) =>
+  country.includes('land')
+)
+console.log(countriesContainingLand)
 //8
-coun = countries.find((a) => a.includes("ia"));
-console.log(coun);
+const countriesContainingIa = countries.filter((country) =>
+  country.includes('ia')
+)
+console.log(countriesContainingIa)
 
 //9
 longest = countries.reduce(function (a, b) {
@@ -68,6 +71,11 @@ longest = countries.reduce(function (a, b) {
 }, "");
 console.log(longest);
 
+//10
+const countriesHaveFiveLetters = countries.filter(
+  (country) => country.length === 5
+)
+console.log(countriesHaveFiveLetters)
 //10
 minLength = 4;
 maxLength = 6;

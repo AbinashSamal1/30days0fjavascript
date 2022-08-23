@@ -6,15 +6,15 @@ do {
 } while (i < 10);
 
 //2
-i=0;
+i = 0;
 while (i < 10) {
-    i += 1;
-    console.log(i);
-  }
-//3  
-let n = 20
-for (let i=0; i<= n; i++){
-  console.log(i)
+  i += 1;
+  console.log(i);
+}
+//3
+let n = 20;
+for (let i = 0; i <= n; i++) {
+  console.log(i);
 }
 
 //4
@@ -29,46 +29,45 @@ for (let i = 1; i <= n; i++) {
 console.log(str);
 
 //5
-for(let i = 0; i <= 10; i++){
-  console.log(`${i} * ${i} = ${i * i}`)
+for (let i = 0; i <= 10; i++) {
+  console.log(`${i} * ${i} = ${i * i}`);
 }
 
 //6
-for(let i = 0; i <= 5; i++){
-  console.log(`${i} * ${i} = ${i * i}`)
-  console.log(`${i} * ${i} * ${i}= ${i * i * i}`)
+for (let i = 0; i <= 5; i++) {
+  console.log(`${i} * ${i} = ${i * i}`);
+  console.log(`${i} * ${i} * ${i}= ${i * i * i}`);
 }
 
 //7
-for(i=0; i<=100; i++){
- 
-  if(i % 2 == 0){
+for (i = 0; i <= 100; i++) {
+  if (i % 2 == 0) {
     console.log(i);
   }
 }
 
 //8
-for(i=0; i<=100; i++){
+for (i = 0; i <= 100; i++) {
   // let's divide the value by 2
   // if the remainder is zero then it's an even number
- 
-  if(i % 2 == 1){
+
+  if (i % 2 == 1) {
     console.log(i);
   }
 }
 
 //9
-const number = parseInt(prompt('Enter a positive Number: '));
+const number = parseInt(prompt("Enter a positive Number: "));
 
-sum = 0, i = 1;
+(sum = 0), (i = 1);
 
 // looping from i = 1 to number
-while(i <= number) {
-    sum += i;
-    i++;
+while (i <= number) {
+  sum += i;
+  i++;
 }
 
-console.log('The sum of numbers:', sum);
+console.log("The sum of numbers:", sum);
 
 //10
 
@@ -99,7 +98,7 @@ function isOdd(n) {
 function findSum(no) {
   let sum = 0;
 
-  for ( i = 0; i < no; i++) {
+  for (i = 0; i < no; i++) {
     if (isOdd(i)) {
       sum += i;
     }
@@ -110,27 +109,28 @@ function findSum(no) {
 console.log(findSum(100));
 
 //13
-const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+const characters =
+  "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
 
 function generateString(length) {
-    let result = ' ';
-    const charactersLength = characters.length;
-    for ( let i = 0; i < length; i++ ) {
-        result += characters.charAt(Math.floor(Math.random() * charactersLength));
-    }
+  let result = " ";
+  const charactersLength = characters.length;
+  for (let i = 0; i < length; i++) {
+    result += characters.charAt(Math.floor(Math.random() * charactersLength));
+  }
 
-    return result;
+  return result;
 }
 
 console.log(generateString(5));
 
 //15
-console.log(generateString(6))
+console.log(generateString(6));
 
 //14
 arr = [];
-while(arr.length < 5){
-    var r = Math.floor(Math.random() * 100) + 1;
-    if(arr.indexOf(r) === -1) arr.push(r);
+while (arr.length < 5) {
+  var r = Math.floor(Math.random() * 100) + 1;
+  if (arr.indexOf(r) === -1) arr.push(r);
 }
 console.log(arr);
